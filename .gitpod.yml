@@ -7,6 +7,9 @@ ports:
 tasks:
   - init: pip3 install -r requirements.txt
     command: gp open templates/main.html && python3 server.py
+    name: New Terminal
+  - openMode: split-right
+    command: echo SplitTerminal
 
 vscode:
   extensions:
