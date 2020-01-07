@@ -6,7 +6,7 @@ ports:
 
 tasks:
   - init: pip3 install -r requirements.txt
-    command: python3 server.py && gp open templates/main.html
+    command: gp open templates/main.html && python3 server.py
 
 vscode:
   extensions:
